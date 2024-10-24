@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.rectangle {
+  position: relative;
+  width: 417px;
+  height: 267px;
+  background-color: lightblue;
+}
+
+.rond {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.rond1 {
+  background-color: red;
+  animation: moveRectangular 3s infinite linear;
+}
+
+.rond2 {
+  background-color: green;
+  animation: moveRectangular 3s infinite linear;
+  animation-delay: 0.6s; /* Décalage fluide */
+}
+
+.rond3 {
+  background-color: orange;
+  animation: moveRectangular 3s infinite linear;
+  animation-delay: 1.2s;
+}
+
+.rond4 {
+  background-color: purple;
+  animation: moveRectangular 3s infinite linear;
+  animation-delay: 1.8s; 
+}
+
+.rond5 {
+  background-color: yellow;
+  animation: moveRectangular 3s infinite linear;
+  animation-delay: 2.4s; 
+}
+
+@keyframes moveRectangular {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 400px;
+  }
+  50% {
+    top: 250px;
+    left: 400px;
+  }
+  75% {
+    top: 250px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
